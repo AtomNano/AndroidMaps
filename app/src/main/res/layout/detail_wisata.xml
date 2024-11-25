@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20sp">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/detaiwisata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail Wisata"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/wisata"
+            android:layout_width="match_parent"
+            android:layout_height="259dp"
+            android:layout_margin="20sp"
+            android:layout_marginTop="30sp"
+            app:srcCompat="@drawable/pa" />
+
+        <TextView
+            android:id="@+id/descripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:layout_marginTop="20sp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat iaculis urna ac tincidunt. Nullam ac leo eget nulla cursus pulvinar a at mauris. Aliquam erat volutpat. Etiam eget lobortis quam, non maximus magna. Proin tincidunt massa quis lectus imperdiet tempus. Mauris sit amet nisl nec dui mattis dignissim id fringilla tortor. Fusce vitae laoreet mi." />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            app:cameraBearing="112.5"
+            app:cameraTargetLat="-33.796923"
+            app:cameraTargetLng="150.922433"
+            app:cameraTilt="30"
+            app:cameraZoom="13"
+            app:mapType="normal"
+            app:uiCompass="false"
+            app:uiRotateGestures="true"
+            app:uiScrollGestures="false"
+            app:uiTiltGestures="true"
+            app:uiZoomControls="false"
+            app:uiZoomGestures="true" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,10 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
-        tools:targetApi="31"
-
-        >
-
+        tools:targetApi="31" >
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".wisataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -35,7 +41,7 @@
             android:exported="true"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".MapsActivity"
+            android:name=".pilihan_wisata"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
