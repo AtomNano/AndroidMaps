@@ -13,17 +13,17 @@ import com.google.android.gms.maps.model.MarkerOptions
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
-private lateinit var binding: ActivityMapsBinding
+    private lateinit var binding: ActivityMapsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-     binding = ActivityMapsBinding.inflate(layoutInflater)
-     setContentView(binding.root)
+        binding = ActivityMapsBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
-                .findFragmentById(R.id.map) as SupportMapFragment
+            .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
     }
 
@@ -39,11 +39,10 @@ private lateinit var binding: ActivityMapsBinding
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-//        // Add a marker in Sydney and move the camera
-//        val padang = LatLng(-0.94924, 100.35427)
-//        mMap.addMarker(MarkerOptions().position(padang).title("Marker in Padang"))
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(padang))
-
+        //        // Add a marker in Sydney and move the camera
+        //        val padang = LatLng(-0.94924, 100.35427)
+        //        mMap.addMarker(MarkerOptions().position(padang).title("Marker in Padang"))
+        //        mMap.moveCamera(CameraUpdateFactory.newLatLng(padang))
 
         // Set the map coordinates to Kyoto Japan.
         val kyoto = LatLng(35.00116, 135.7681)
